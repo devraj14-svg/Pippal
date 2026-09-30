@@ -1,0 +1,6 @@
+{
+  "name": "PipPal — Find Your Trading People",
+  "description": "Social networking platform for young traders to find compatible trading buddies, join private trading rooms, track daily journals, and build discipline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

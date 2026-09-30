@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #faf9f6;
+    color: #1e293b;
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Mobile PWA Safe Area Utilities */
+.pb-safe {
+  padding-bottom: max(16px, env(safe-area-inset-bottom, 16px));
+}
+
+.pt-safe {
+  padding-top: max(8px, env(safe-area-inset-top, 8px));
+}
+
+/* Prevent unwanted callout menus on mobile taps */
+.no-callout {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Tactile button & card transition polish */
+.btn-tactile {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-tactile:hover {
+  transform: translateY(-1.5px);
+}
+.btn-tactile:active {
+  transform: translateY(0.5px) scale(0.98);
+}
+
+/* Custom sleek scrollbar for light cheerful theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.5);
+}
+
+/* Subtle keyframes for warm breathing glow */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 4s ease-in-out infinite;
+}
+
+

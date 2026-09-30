@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+
+    <!-- Heart Fill Gradient -->
+    <linearGradient id="heartInner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Trend Glow Gradient -->
+    <linearGradient id="trendGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Candlestick Body Gradient -->
+    <linearGradient id="candleBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#d1fae5" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Base Rounded Icon Container -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  
+  <!-- Soft Ambient Glow Circle -->
+  <circle cx="256" cy="256" r="210" fill="#ffffff" opacity="0.08" />
+
+  <!-- Heart Shape -->
+  <path
+    d="M 256 428 C 244 416 92 296 92 184 C 92 118 144 72 208 72 C 240 72 250 86 256 96 C 262 86 272 72 304 72 C 368 72 420 118 420 184 C 420 296 268 416 256 428 Z"
+    fill="url(#heartInner)"
+    stroke="#ffffff"
+    stroke-width="20"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+
+  <!-- Uptrend Area Gradient Fill beneath the trendline -->
+  <path
+    d="M 148 316 L 204 252 L 256 272 L 328 178 L 372 128 L 372 344 C 332 376 292 400 256 418 C 220 400 180 376 148 344 Z"
+    fill="url(#trendGlow)"
+  />
+
+  <!-- Candlesticks inside Heart (Ascending Staircase) -->
+  <!-- Candle 1 -->
+  <line x1="164" y1="260" x2="164" y2="340" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-opacity="0.85" />
+  <rect x="150" y="280" width="28" height="46" rx="8" fill="url(#candleBody)" stroke="#ffffff" stroke-width="4" />
+
+  <!-- Candle 2 -->
+  <line x1="220" y1="205" x2="220" y2="295" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-opacity="0.85" />
+  <rect x="206" y="230" width="28" height="42" rx="8" fill="url(#candleBody)" stroke="#ffffff" stroke-width="4" />
+
+  <!-- Candle 3 -->
+  <line x1="280" y1="150" x2="280" y2="245" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-opacity="0.85" />
+  <rect x="266" y="174" width="28" height="52" rx="8" fill="url(#candleBody)" stroke="#ffffff" stroke-width="4" />
+
+  <!-- Candle 4 -->
+  <line x1="340" y1="105" x2="340" y2="195" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-opacity="0.85" />
+  <rect x="326" y="125" width="28" height="50" rx="8" fill="url(#candleBody)" stroke="#ffffff" stroke-width="4" />
+
+  <!-- Uptrend Market Line -->
+  <path
+    d="M 144 322 L 200 256 L 256 274 L 332 174 L 378 122"
+    stroke="#ffffff"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Breakout Arrow Head -->
+  <path
+    d="M 334 122 H 378 V 166"
+    stroke="#ffffff"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Cheerful Star Sparkle at Peak -->
+  <circle cx="378" cy="122" r="14" fill="#fef08a" />
+</svg>

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "user_devraj",
+    "name": "Devraj Joshi",
+    "username": "devraj_trades",
+    "email": "devrajjofficial@gmail.com",
+    "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "age": 24,
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "location": "Bengaluru, India",
+    "experience": "Beginner",
+    "markets": [
+      "NIFTY",
+      "Gold",
+      "Options"
+    ],
+    "styles": [
+      "Intraday",
+      "Scalping"
+    ],
+    "tradingHours": "9:15–11:30 AM IST",
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "bio": "Learning price action and VWAP pullbacks. Main goal is strict risk management—stopping after 2 trades win or lose.",
+    "interests": [
+      "Price Action",
+      "Trading in the Zone",
+      "Risk Management (1:2 R:R)",
+      "Psychology",
+      "Morning Momentum"
+    ],
+    "tradingRules": [
+      "Max 2 trades per session",
+      "Hard stop-loss of 15 points on NIFTY index",
+      "No trading after 11:30 AM IST",
+      "Never add to a losing position"
+    ],
+    "whatsappConsent": false,
+    "whatsappNumber": "+91 98765 43210",
+    "accountabilityGoal": "Complete 20 trading days adhering strictly to my 2-trade limit.",
+    "streakDays": 4,
+    "lastCheckinStatus": "adhered",
+    "activeBuddyId": "trader_aarav",
+    "createdAt": "2026-09-27T17:55:05.777Z"
+  },
+  {
+    "name": "Aarav Trader",
+    "username": "aarav_trader_trader",
+    "email": "aarav.trade@test.com",
+    "passwordHash": "b2f076825c9ff7277fe520fda21718433cd49d406d56fedcab964635e76d9709",
+    "age": 24,
+    "avatar": "https://images.unsplash.com/photo-1534528741797?auto=format&fit=crop&w=400&q=80",
+    "location": "Mumbai, India",
+    "experience": "Beginner",
+    "markets": [
+      "NIFTY",
+      "Options"
+    ],
+    "styles": [
+      "Intraday"
+    ],
+    "tradingHours": "9:15–11:30 AM IST",
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "bio": "Committed to strictly following risk management rules and trading with accountability.",
+    "interests": [
+      "Price Action",
+      "Risk Management (1:2 R:R)",
+      "Trading Psychology"
+    ],
+    "tradingRules": [
+      "Max 2 trades per session",
+      "Strict 15-pt stop-loss"
+    ],
+    "whatsappConsent": false,
+    "streakDays": 1,
+    "lastCheckinStatus": "adhered",
+    "id": "user_1790531716762_956tq",
+    "createdAt": "2026-09-27T17:55:16.762Z"
+  }
+]

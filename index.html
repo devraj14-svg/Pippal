@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>PipPal — Find Your Trading People</title>
+    <meta name="description" content="Social networking platform for young traders to find compatible trading buddies, join private trading rooms, track daily journals, and build discipline." />
+    <meta property="og:title" content="PipPal — Find Your Trading People" />
+    <meta property="og:description" content="Social networking platform for young traders to find compatible trading buddies, join private trading rooms, track daily journals, and build discipline." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#faf9f6" />
+    <meta name="application-name" content="PipPal" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="PipPal" />
+    <meta name="msapplication-TileColor" content="#faf9f6" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      /* Standalone app container setup & splash animation */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #faf9f6;
+        -webkit-tap-highlight-color: transparent;
+        overscroll-behavior-y: none;
+      }
+      .pippal-splash {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #faf9f6;
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        color: #0f172a;
+        text-align: center;
+        padding: 24px;
+        box-sizing: border-box;
+      }
+      .pippal-splash-logo {
+        width: 72px;
+        height: 72px;
+        border-radius: 24px;
+        background: linear-gradient(135deg, #10b981 0%, #0d9488 100%);
+        box-shadow: 0 12px 24px -4px rgba(16, 185, 129, 0.35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        animation: splashPulse 2s ease-in-out infinite;
+      }
+      .pippal-splash-title {
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        margin: 0 0 6px 0;
+        color: #0f172a;
+      }
+      .pippal-splash-subtitle {
+        font-size: 13px;
+        color: #64748b;
+        margin: 0 0 24px 0;
+        font-weight: 500;
+      }
+      .pippal-splash-loader {
+        width: 140px;
+        height: 4px;
+        background: #e2e8f0;
+        border-radius: 999px;
+        overflow: hidden;
+        position: relative;
+      }
+      .pippal-splash-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 45%;
+        background: linear-gradient(90deg, #10b981, #14b8a6);
+        border-radius: 999px;
+        animation: splashLoading 1.4s ease-in-out infinite;
+      }
+      @keyframes splashPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+      @keyframes splashLoading {
+        0% { left: -45%; width: 35%; }
+        50% { left: 35%; width: 55%; }
+        100% { left: 100%; width: 35%; }
+      }
+    </style>
+  </head>
+  <body class="bg-[#faf9f6] text-slate-850 antialiased selection:bg-emerald-500/20 selection:text-emerald-800 font-sans">
+    <div id="root">
+      <!-- Instant Progressive Splash Loading Screen for Native App Feel -->
+      <div class="pippal-splash">
+        <div class="pippal-splash-logo">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 44px; height: 44px;">
+            <path d="M24 41.5 C22.8 40.5 7 28.5 7 17.5 C7 11 12.2 6.5 18.5 6.5 C21.6 6.5 23.3 7.8 24 8.7 C24.7 7.8 26.4 6.5 29.5 6.5 C35.8 6.5 41 11 41 17.5 C41 28.5 25.2 40.5 24 41.5 Z" fill="rgba(255,255,255,0.2)" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" />
+            <path d="M12.5 32.5 L18 26 L23.5 28 L31 17.5 L36 12.5" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M32 12.5 H36 V16.5" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="36" cy="12.5" r="1.5" fill="#fef08a" />
+          </svg>
+        </div>
+        <h1 class="pippal-splash-title">PipPal</h1>
+        <p class="pippal-splash-subtitle">Find your trading people</p>
+        <div class="pippal-splash-loader">
+          <div class="pippal-splash-bar"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
